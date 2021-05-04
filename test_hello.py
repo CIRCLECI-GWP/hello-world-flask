@@ -13,7 +13,7 @@ class PageTests(unittest.TestCase):
 
     def test_page_content(self):
         response = self.app.get('/', follow_redirects=True)
-        self.assertEqual(response.data.decode('UTF-8'), 'Hello, World!')
+        self.assertEqual(response.data.decode('UTF-8'), 'Hello, CircleCI!')
 
 
 if __name__ == "__main__":
